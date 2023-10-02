@@ -25,7 +25,17 @@ class _AppScreenState extends State<AppScreen> {
     super.initState();
     isUserRegister();
   }
-
+/*
+ * Description: This function checks if a user is registered by fetching the user account
+ * registration status asynchronously.
+ *
+ * - It awaits the result of 'UserAccountRegister.getUserAccountRegister()', which likely
+ *   returns a boolean indicating whether the user is registered.
+ *
+ * - It prints the retrieved registration status and a message 'qeq' for debugging purposes.
+ *
+ * - It calls 'setState()' to trigger a UI update if necessary.
+ */
   isUserRegister() async {
     isRegister = await UserAccountRegister.getUserAccountRegister();
     print(isRegister);
